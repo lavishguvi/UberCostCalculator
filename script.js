@@ -1,6 +1,5 @@
-function updateTime() {
-  let date = new Date();
-  let time = date.toLocaleTimeString();
-  document.getElementById("time").innerHTML = time;
-}
-setInterval(updateTime, 1000);
+const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const title = document.querySelector('#title');
+const weekday = document.querySelector('#weekday');
+const date = new Date();
+weekday.innerHTML = weekdays[date.getDay()];
