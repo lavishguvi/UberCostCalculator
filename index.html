@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Day of the Week</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-  <h1 id="title">Day of the Week</h1>
-  <p id="weekday"></p>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Uber Cost Calculator</h1>
+      <form>
+        <label>
+          Distance (miles):
+          <input type="number" id="distance" required /> 
+        </label>
+         <br>
+        <label>
+          Base Fare:
+          <input type="number" id="baseFare" required />  
+        </label>
+      
+        <label>
+          Cost per Minute:
+          <input type="number" id="costPerMinute" required />
+        </label>
+        
+        <label>
+          Cost per Mile:
+          <input type="number" id="costPerMile" required />
+        </label>
+
+        <input type="submit" value="Submit"  />
+      </form>
+      <div class="output"></div>
+    </div>
+    <script src="script.js"></script>
+
+  </body>
 </html>
